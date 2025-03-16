@@ -1,0 +1,738 @@
+/* Style global */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* Blanc cassé */
+    color: #333; /* Texte gris foncé */
+    width: 100%;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #0071c2; /* Bleu Booking */
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+
+}
+/** carousel **/
+.carousel {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.carousel-images {
+    display: flex;
+    animation: slide 12s infinite; 
+}
+
+.carousel-slide {
+    min-width: 100%;
+    transition: transform 0.5s ease;
+}
+
+.carousel-images img {
+    width: 100%;
+    height: 300px; 
+    object-fit: cover; 
+}
+
+@keyframes slide {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(0); }
+    25% { transform: translateX(-100%); }
+    45% { transform: translateX(-100%); }
+    50% { transform: translateX(-200%); }
+    70% { transform: translateX(-200%); }
+    75% { transform: translateX(0); }
+    100% { transform: translateX(0); }
+}
+/**logo**/
+header .logo img {
+    height: 50px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background-color: white;
+    color: #0071c2;
+}
+
+/* Section Introduction */
+
+
+
+/*section cercuit acceuil */
+/* Section styles */
+.thematic-section {
+    text-align: center;
+    margin: 50px 20px;
+  }
+  
+  .thematic-section h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  
+  /* Thematic cards container */
+  .thematic-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  /* Single card */
+  .thematic-card {
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .thematic-card:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Card image */
+  .card-image {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    
+  }
+  
+  /* Card content */
+  .card-content {
+    padding: 15px;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  .card-content h3 {
+    font-size: 18px;
+    color: #0055aa;
+    margin-bottom: 10px;
+  }
+  
+  .card-content h4 {
+    font-size: 22px;
+    color: #ff5722;
+    margin: 10px 0;
+  }
+  
+  .card-content p {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0;
+  }
+  
+  /* Button */
+  .button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #0055aa;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #0055aa;
+  }
+  
+
+/* Section Features */
+
+
+/* Section Testimonials */
+
+/* Section Contact */
+.contact {
+    text-align: center;
+    background-color: #0055aa;
+    color: white;
+    padding: 40px 20px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.contact button {
+    background-color: white;
+    color: #0055aa;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.contact button:hover {
+    background-color: #eef3fc;
+    color: #0055aa;
+}
+ /*contact */
+
+ .form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 2000px;
+  width: auto;
+  margin:  50px;
+}
+
+.form h1 {
+  text-align: center;
+  color: #0071c2;
+}
+
+.form .form-group {
+  margin-bottom: 15px;
+}
+
+.form .form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form .form-group input, 
+.form .form-group select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.form .form-group input[type="date"],
+.form .form-group input[type="number"] {
+  padding: 6px;
+}
+
+.form .form-group button {
+  background-color: #0071c2;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.form .form-group button:hover {
+  background-color: #005fa3;
+}
+
+/* Footer styles */
+.footer {
+    background-color: #0055aa; 
+    color: white;
+    padding: 20px 10px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-item {
+    text-align: center;
+    flex: 1;
+    margin: 10px;
+  }
+  
+  .footer-item span {
+    font-size: 24px;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .footer-item p {
+    font-size: 14px;
+    margin: 0;
+  }
+  
+  .footer-item strong {
+    font-size: 16px;
+  }
+  
+  /* Footer bottom */
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .footer-links {
+    font-size: 12px;
+  }
+  
+  .footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 5px;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-social {
+    font-size: 12px;
+  }
+  
+  .footer-social a {
+    color: white;
+    text-decoration: none;
+    margin: 0 5px;
+  }
+  
+  .footer-social a:hover {
+    text-decoration: underline;
+  }
+  
+
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(33, 19, 238, 0.904);
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    margin: 2rem;
+  }
+  
+  .price {
+    color: grey;
+    font-size: 22px;
+  }
+  
+  .card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #010318;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  .card button:hover {
+    opacity: 0.7;
+  }
+  .carte{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    margin-left: 5px;
+  }
+
+  .button-group button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.button-group button.secondary {
+    background-color: #e9ecef;
+    color: #007bff;
+}
+
+.button-group {
+    margin-top: 10px;
+}
+
+.button-group button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.button-group button.secondary {
+    background-color: #e9ecef;
+    color: #007bff;
+}
+/** hotel **/
+.hotels {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.hotel {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(50% - 10px);
+}
+.hotel:hover {
+   transform: translateY(-15px); }
+
+.hotel img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.hotel-info {
+    padding: 15px;
+}
+
+.hotel-info h3 {
+    margin: 0;
+}
+
+.hotel-info .location {
+    color: #666;
+    font-size: 0.9em;
+}
+
+.hotel-info .price {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.hotel-info .rating {
+    background: #007bff;
+    color: white;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.9em;
+ 
+}
+
+
+/**vols**/
+.booking-form {
+    background-color: #0055aa; /* Bleu foncé */
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    margin: 20px 0;
+}
+
+.booking-form form {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    align-items: center;
+}
+
+.booking-form .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.booking-form label img {
+    width: 20px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.booking-form input,
+.booking-form select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.booking-form button {
+    grid-column: span 3;
+    padding: 10px;
+    
+    color: #0055aa;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+
+/***vols suite **/
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.section-title {
+  color: #0078D7;
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  position: relative;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.highlight-section {
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin: 40px 0;
+}
+
+.highlight-section p {
+  margin: 0 0 10px;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.buttons a {
+  display: inline-block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #0078D7;
+  border-radius: 5px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.buttons a:hover {
+  background-color: #005fa3;
+}
+
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #f5f5f5;
+}
+
+/**acceuil **/
+.bonnes-raisons {
+    text-align: center;
+    padding: 20px;
+    
+  }
+  
+  .raison {
+    display: inline-block;
+    width: 20%;
+    margin: 0 10px;
+    text-align: center;
+   
+  }
+  
+  .raison img {
+    width: 50px;
+    margin-bottom: 10px;
+  }
+
+
+  /***page circuit ***/
+  
+/**hotel belvedere **/
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+.hotel-table-gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.availability-table {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.availability-table h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filters input,
+.filters select,
+.filters .search-btn {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.filters .search-btn {
+  background-color: #0078D7;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.filters .search-btn:hover {
+  background-color: #005fa3;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+thead th {
+  text-align: left;
+  background-color: #0078D7;
+  color: white;
+  padding: 10px;
+}
+
+tbody td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+tbody td span {
+  color: gray;
+  font-size: 12px;
+}
+
+.view-tariff-btn {
+  background-color: #0078D7;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.view-tariff-btn:hover {
+  background-color: #005fa3;
+}
+
+.masonry-gallery {
+  column-count: 3;
+  column-gap: 15px;
+}
+
+.masonry-gallery img {
+  width: 100%;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.masonry-gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
